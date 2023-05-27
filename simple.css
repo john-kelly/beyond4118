@@ -56,6 +56,9 @@ html {
   /* Set the font globally */
   font-family: var(--sans-font);
 
+  /* Uppercase by default */
+  text-transform: uppercase;
+
   /* no scroll for now. */
   /*  scroll-behavior: smooth;*/
 }
