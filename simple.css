@@ -26,16 +26,24 @@
 /*  --our-black: #0d0d0d;*/
 }
 
+img.left-box {
+    width: 350px;
+    grid-column: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+    img.left-box {
+        width: 350px;
+        grid-column: 1 / -1;
+    }
+}
+
 /*
 removed border around articles
 removed border around menu items
 changed some color variables (might want to double check bg and accent bg)
 
 */
-
-h1 {
-  color: #f23545;
-}
 
 /* Reset box-sizing */
 *, *::before, *::after {
@@ -54,7 +62,7 @@ progress {
 
 html {
   /* Set the font globally */
-  font-family: var(--sans-font);
+  font-family: var(--mono-font);
 
   /* Uppercase by default */
   text-transform: uppercase;
@@ -80,7 +88,7 @@ body > * {
 /* Make the header bg full width, but the content inline with body */
 body > header {
   background-color: var(--accent-bg);
-  border-bottom: 1px solid var(--border);
+/*  border-bottom: 1px solid var(--border);*/
   text-align: center;
   padding: 0 0.5rem 2rem 0.5rem;
   grid-column: 1 / -1;
