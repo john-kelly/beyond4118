@@ -27,14 +27,21 @@
 }
 
 img.left-box {
-    width: 350px;
-    grid-column: 1;
+    width: 100%;
+    grid-column: 1 / -1;
 }
 
-@media only screen and (max-width: 1000px) {
-    img.left-box {
-        width: 350px;
-        grid-column: 1 / -1;
+.mobile-banner {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .mobile-banner {
+        display: inline-block;
+    }
+
+    .desktop-banner {
+        display: none;
     }
 }
 
@@ -335,6 +342,8 @@ article, fieldset, dialog {
   padding: 1rem;
   border-radius: var(--standard-border-radius);
   margin-bottom: 1rem;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 article h2:first-child,
