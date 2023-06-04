@@ -268,14 +268,16 @@ input:enabled:focus-visible:where(
 
 #menu {
     display: flex;
-    padding: 0;
+    padding: 6px;
     position: fixed;
     width: 100%;
     justify-content: flex-end;
     background-color: transparent;
+/*    background-color: var(--accent-bg);*/
     border-bottom: 0;
-    color: #f23545;
+/*    color: #f23545;*/
 /*    color: #4b53f2;*/
+    color: #0d0d0d;
 }
 
 #menu > details {
@@ -290,17 +292,22 @@ input:enabled:focus-visible:where(
     text-align: right;
     margin: 0;
     font-size: 1rem;
+    box-shadow: 0 0 0 1px #0d0d0d, 4px 4px 0 0 #0d0d0d;
+    padding: 0.5rem 0.5rem;
+    background-color: var(--accent-bg)
 }
 
 #menu > details > nav {
     text-align: right;
     position: absolute;
-    right: 0;
+    right: -8px;
+    top: 50px;
     /* need this? positions proper without it. probably based on order in dom top: 60px; */
     /*  ok it's based on the height of the header menu.  */
-    border: 1px solid var(--border);
+    border: 1px solid #0d0d0d;
     border-right: 0;
     background-color: var(--accent-bg);
+    width: 175px;
 }
 
 
@@ -331,18 +338,22 @@ header > details > nav a:visited {
   text-decoration: underline;
   line-height: 1;
   font-size: 1rem;
+  color: #0d0d0d;
+  white-space: nowrap;
 }
 
 header > details > nav a:hover,
 header > details > nav a.current,
 header > details > nav a[aria-current="page"] {
-  color: var(--accent);
   cursor: pointer;
 }
 
-header > details > nav a.current {
-/*  arrow marker here.  */
+header > details > nav a:hover::before,
+header > details > nav a.current::before,
+header > details > nav a[aria-current="page"]::before {
+    content: "→ ";
 }
+
 
 
 /* Consolidate box styling */
