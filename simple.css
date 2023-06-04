@@ -300,12 +300,11 @@ input:enabled:focus-visible:where(
 #menu > details > nav {
     text-align: right;
     position: absolute;
-    right: -8px;
+    right: 0;
     top: 50px;
     /* need this? positions proper without it. probably based on order in dom top: 60px; */
     /*  ok it's based on the height of the header menu.  */
     border: 1px solid #0d0d0d;
-    border-right: 0;
     background-color: var(--accent-bg);
     width: 175px;
 }
