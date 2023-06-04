@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_a39f8003d883ab24359cd45c32329236 {
+                #map_0c7d91c272fb58b70c88739d6b89d858 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,72 +39,203 @@
 <body>
 
 
-            <div class="folium-map" id="map_a39f8003d883ab24359cd45c32329236" ></div>
+            <div class="folium-map" id="map_0c7d91c272fb58b70c88739d6b89d858" ></div>
 
 </body>
 <script>
 
 
-            var map_a39f8003d883ab24359cd45c32329236 = L.map(
-                "map_a39f8003d883ab24359cd45c32329236",
+            var map_0c7d91c272fb58b70c88739d6b89d858 = L.map(
+                "map_0c7d91c272fb58b70c88739d6b89d858",
                 {
                     center: [34.0977313, -118.3456552],
                     crs: L.CRS.EPSG3857,
                     zoom: 10,
-                    zoomControl: true,
+                    zoomControl: false,
                     preferCanvas: false,
                     attribution: "CartoDB",
                 }
             );
 
+            // L.control.zoom({
+            //     position: 'bottomright'
+            // }).addTo(map_0c7d91c272fb58b70c88739d6b89d858);
 
 
 
 
-            var tile_layer_66364f23a8c8b96445fa4f3ee980ae5c = L.tileLayer(
+
+            var tile_layer_c40fa3367858dfca2649a9f2d11b9b65 = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
                 {"attribution": "", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_a39f8003d883ab24359cd45c32329236);
+            ).addTo(map_0c7d91c272fb58b70c88739d6b89d858);
 
 
-            var feature_group_8d6215811cb01b50b86695413c230d6f = L.featureGroup(
+            var feature_group_b4faf52e5a8e5edd1c1a465049f983c6 = L.featureGroup(
                 {}
-            ).addTo(map_a39f8003d883ab24359cd45c32329236);
+            ).addTo(map_0c7d91c272fb58b70c88739d6b89d858);
 
 
-            var marker_9cb093e54c5ffb86bb3d043c9567c70c = L.marker(
+            var marker_ee01ba6ae3b1cc092db94c00b2380f89 = L.marker(
                 [34.0977313, -118.3456552],
                 {}
-            ).addTo(feature_group_8d6215811cb01b50b86695413c230d6f);
+            ).addTo(feature_group_b4faf52e5a8e5edd1c1a465049f983c6);
 
 
-            var icon_2382446703be2b2e1e276ecc42353897 = L.AwesomeMarkers.icon(
+            var icon_7dea3c86470b8a423a756cdfe13c5ff0 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_9cb093e54c5ffb86bb3d043c9567c70c.setIcon(icon_2382446703be2b2e1e276ecc42353897);
+            marker_ee01ba6ae3b1cc092db94c00b2380f89.setIcon(icon_7dea3c86470b8a423a756cdfe13c5ff0);
 
 
-        var popup_3f2b6c48376337bf33c7966574d83068 = L.popup({"maxWidth": 200});
-
-
-
-                var html_14d72d0af0ccc6ba4b655ef009537b2c = $(`<div id="html_14d72d0af0ccc6ba4b655ef009537b2c" style="width: 100.0%; height: 100.0%;"> I used to hang out and sleep in front of the Durant library and I experienced cruel behavior by people who worked here and the surrounding residents. They'd always say things like "hurry up and get out of here before the people come." They'd always complain about me "loitering." </div>`)[0];
-                popup_3f2b6c48376337bf33c7966574d83068.setContent(html_14d72d0af0ccc6ba4b655ef009537b2c);
+        var popup_06dfe81821cbcc528160b06c27c6adc3 = L.popup({"maxWidth": 500});
 
 
 
-        marker_9cb093e54c5ffb86bb3d043c9567c70c.bindPopup(popup_3f2b6c48376337bf33c7966574d83068)
+                var html_a5f55d00986c1af4807f6203923bda7f = $(`<div id="html_a5f55d00986c1af4807f6203923bda7f" style="width: 100.0%; height: 100.0%;"> I used to hang out and sleep in front of the Durant library and I experienced cruel behavior by people who worked here and the surrounding residents. They'd always say things like "hurry up and get out of here before the people come." They'd always complain about me "loitering." </div>`)[0];
+                popup_06dfe81821cbcc528160b06c27c6adc3.setContent(html_a5f55d00986c1af4807f6203923bda7f);
+
+
+
+        marker_ee01ba6ae3b1cc092db94c00b2380f89.bindPopup(popup_06dfe81821cbcc528160b06c27c6adc3)
         ;
 
 
 
 
-            // marker_9cb093e54c5ffb86bb3d043c9567c70c.bindTooltip(
-            //     `<div>
-            //          story
-            //      </div>`,
-            //     {"sticky": true}
-            // );
+            var marker_5582b445fa90489ff1fe9753ac6a63b5 = L.marker(
+                [34.180159, -118.448547],
+                {}
+            ).addTo(feature_group_b4faf52e5a8e5edd1c1a465049f983c6);
+
+
+            var icon_5e200b8e8cd401c7c3342d1fe4c23ff7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5582b445fa90489ff1fe9753ac6a63b5.setIcon(icon_5e200b8e8cd401c7c3342d1fe4c23ff7);
+
+
+        var popup_0291999fe55039971b75b52eba38dce9 = L.popup({"maxWidth": 500});
+
+
+
+                var html_75fc325028aa562b5ca69f75abcabe49 = $(`<div id="html_75fc325028aa562b5ca69f75abcabe49" style="width: 100.0%; height: 100.0%;">  People think our block is lucky because we don’t get a lot of sweeps by LAPD and the sanitation department. But it’s actually because my son had a seizure right in front of them, induced by the stress and anxiety of sweeps and all the people that come. It was something that had to happen first for them to actually stop doing that. We can keep things clean in our area and be left alone as we don’t give them a reason to come and say sweeps are necessary. We took it as an opportunity, to show that we don’t need them.  Sweeps don’t end in anything positive - they’re traumatic, my dogs suffer emotionally, and they take all of your things. Everyone can feel like something really stressful is happening and we all absorb it.  </div>`)[0];
+                popup_0291999fe55039971b75b52eba38dce9.setContent(html_75fc325028aa562b5ca69f75abcabe49);
+
+
+
+        marker_5582b445fa90489ff1fe9753ac6a63b5.bindPopup(popup_0291999fe55039971b75b52eba38dce9)
+        ;
+
+
+
+
+            var marker_b870ea8cf5faff4640c496177157fbce = L.marker(
+                [34.180166, -118.442478],
+                {}
+            ).addTo(feature_group_b4faf52e5a8e5edd1c1a465049f983c6);
+
+
+            var icon_7396b46a2f4781535b990e4427685304 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b870ea8cf5faff4640c496177157fbce.setIcon(icon_7396b46a2f4781535b990e4427685304);
+
+
+        var popup_a234d86be601e1fbdba47b0923ce2167 = L.popup({"maxWidth": 500});
+
+
+
+                var html_f2fed7fa8bf8679b142d539e0941ef21 = $(`<div id="html_f2fed7fa8bf8679b142d539e0941ef21" style="width: 100.0%; height: 100.0%;"> When the new version of 41.18 passed, so many people we knew passed away right away and people went underground to escape police harassment. This is direct targeting, saying that you don’t belong, aren’t welcome, and shouldn’t exist. People are further removed from their communities, and dying from unnecessary deaths. I have seen lapd try to ticket someone while they were overdosing and literally dying. We ran over to help and once the police realized, they just left them there instead of helping. That’s the kind of shit that happens all the time and that we don’t forget things like that. Aetna is a family and a lifeline for so many people, the possibility of banning people from the street is complete violence. cause we don’t get a lot of sweeps by LAPD and the sanitation department. But it’s actually because my son had a seizure right in front of them, induced by the stress and anxiety of sweeps and all the people that come. It was something that had to happen first for them to actually stop doing that. We can keep things clean in our area and be left alone as we don’t give them a reason to come and say sweeps are necessary. We took it as an opportunity, to show that we don’t need them.  Sweeps don’t end in anything positive - they’re traumatic, my dogs suffer emotionally, and they take all of your things. Everyone can feel like something really stressful is happening and we all absorb it.  </div>`)[0];
+                popup_a234d86be601e1fbdba47b0923ce2167.setContent(html_f2fed7fa8bf8679b142d539e0941ef21);
+
+
+
+        marker_b870ea8cf5faff4640c496177157fbce.bindPopup(popup_a234d86be601e1fbdba47b0923ce2167)
+        ;
+
+
+
+
+            var marker_240a9c77f47535a2f2af5bc76290cda8 = L.marker(
+                [34.173993, -118.38085],
+                {}
+            ).addTo(feature_group_b4faf52e5a8e5edd1c1a465049f983c6);
+
+
+            var icon_bf0edc31916899256ee73afaf3226532 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_240a9c77f47535a2f2af5bc76290cda8.setIcon(icon_bf0edc31916899256ee73afaf3226532);
+
+
+        var popup_544a0a1316c0f525e61e88e690a67110 = L.popup({"maxWidth": 500});
+
+
+
+                var html_110b7c962c346d15730bf455968cb4c1 = $(`<div id="html_110b7c962c346d15730bf455968cb4c1" style="width: 100.0%; height: 100.0%;"> And they what they did is literally sweep us off the street. And they literally came behind us with our washers. They gave us X amount of time, which was very little, to remove our belongings from where we were situated and uncomfortable, because that's where we could be, you know, as far as we knew. Because I've always been like, “Where can I go?” whenever I'm told to go somewhere else. And it's like, it's not like I go places and like, destroy shit, and like making it worse because I like to make things better. It doesn't matter, whatever, how it felt point is like it was really a shitty experience to be like, transplanted and displaced. </div>`)[0];
+                popup_544a0a1316c0f525e61e88e690a67110.setContent(html_110b7c962c346d15730bf455968cb4c1);
+
+
+
+        marker_240a9c77f47535a2f2af5bc76290cda8.bindPopup(popup_544a0a1316c0f525e61e88e690a67110)
+        ;
+
+
+
+
+            var marker_2d07a267a220dd61364addd404f1e41a = L.marker(
+                [34.053505, -118.242213],
+                {}
+            ).addTo(feature_group_b4faf52e5a8e5edd1c1a465049f983c6);
+
+
+            var icon_ff03941226f882353c8a852bf94acb09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2d07a267a220dd61364addd404f1e41a.setIcon(icon_ff03941226f882353c8a852bf94acb09);
+
+
+        var popup_46614ac3d68df1ef6434eecf709a433f = L.popup({"maxWidth": 500});
+
+
+
+                var html_029521049338b9ba1f1a54e5d24093f0 = $(`<div id="html_029521049338b9ba1f1a54e5d24093f0" style="width: 100.0%; height: 100.0%;"> I just want to be human. And I want all my unhoused friends to be treated like human, on top of all the rights that we deserve like everybody else. What did we do wrong? We struggled a little bit more than others? Just treat us like human. That’s it. </div>`)[0];
+                popup_46614ac3d68df1ef6434eecf709a433f.setContent(html_029521049338b9ba1f1a54e5d24093f0);
+
+
+
+        marker_2d07a267a220dd61364addd404f1e41a.bindPopup(popup_46614ac3d68df1ef6434eecf709a433f)
+        ;
+
+
+
+
+            var marker_38bce539ee75058b70cee25bd018a9c0 = L.marker(
+                [34.180181, -118.44017],
+                {}
+            ).addTo(feature_group_b4faf52e5a8e5edd1c1a465049f983c6);
+
+
+            var icon_67a2f5b4be1d516d835d6c956db99edc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38bce539ee75058b70cee25bd018a9c0.setIcon(icon_67a2f5b4be1d516d835d6c956db99edc);
+
+
+        var popup_4b7da6dad3af9683a4ba3744fce3840b = L.popup({"maxWidth": 500});
+
+
+
+                var html_54dec03f2ab109dc08611849b3cc4695 = $(`<div id="html_54dec03f2ab109dc08611849b3cc4695" style="width: 100.0%; height: 100.0%;"> I was ticketed a few weeks ago, because they said my tent was an obstruction. I also got my truck towed, and everyday it's fifteen more dollars. It's not impossible to get it back, I'm trying to. I have to. The shelter nearby, well, I'm grateful for all the meals they provide but you can't sleep there. It's too loud, it's restrictive. I'm not gonna complain about the food, but they don't really provide services. I don't even know if they know CPR. </div>`)[0];
+                popup_4b7da6dad3af9683a4ba3744fce3840b.setContent(html_54dec03f2ab109dc08611849b3cc4695);
+
+
+
+        marker_38bce539ee75058b70cee25bd018a9c0.bindPopup(popup_4b7da6dad3af9683a4ba3744fce3840b)
+        ;
+
+
 
 </script>
 </html>
