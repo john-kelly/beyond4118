@@ -26,6 +26,17 @@
 /*  --our-black: #0d0d0d;*/
 }
 
+#map {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+#map > main {
+    padding: 0;
+    margin: 0;
+}
+
 img.left-box {
     width: 100%;
     grid-column: 1 / -1;
@@ -258,6 +269,13 @@ input:enabled:focus-visible:where(
 #menu {
     display: flex;
     padding: 0;
+    position: absolute;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: transparent;
+    border-bottom: 0;
+    color: #f23545;
+/*    color: #4b53f2;*/
 }
 
 #menu > details {
@@ -265,23 +283,24 @@ input:enabled:focus-visible:where(
     margin: 0;
     padding: 0;
     position: relative;
+    background-color: transparent;
 }
 
 #menu > details > summary {
     text-align: right;
     margin: 0;
-    padding: 1rem;
-    width: 175px;
+    padding: 1.5rem;
+    font-size: 1.5rem;
 }
 
 #menu > details > nav {
-    width: 175px;
     text-align: right;
     position: absolute;
     right: 0;
-    /* need this? top: 60px; */
-    border-bottom: 1px solid var(--border);
-    border-left: 1px solid var(--border);
+    /* need this? positions proper without it. probably based on order in dom top: 60px; */
+    /*  ok it's based on the height of the header menu.  */
+    border: 1px solid var(--border);
+    border-right: 0;
     background-color: var(--accent-bg);
 }
 
@@ -304,7 +323,7 @@ header > details > nav ol li {
 
 header > details > nav a,
 header > details > nav a:visited {
-  padding: 1rem;
+  padding: 1.5rem;
   display: inline-block;
   width: 100%;
   height: 100%;
