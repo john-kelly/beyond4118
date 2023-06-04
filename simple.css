@@ -384,6 +384,12 @@ aside {
   border: none;
   box-shadow: 0 0 0 1px #0d0d0d, 6px 6px 0 0 #0d0d0d;;
 }
+
+aside > a {
+    /* this removed an annoying whitespace at end */
+    display: flex;
+}
+
 *[dir="rtl"] aside {
   float: left;
 }
@@ -413,8 +419,6 @@ section h2:first-child {
 
 section {
   border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-/*  padding: 2rem 1rem;*/
   margin: 3rem 0;
   margin-top: 0;
 }
