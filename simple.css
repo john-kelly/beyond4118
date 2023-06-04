@@ -270,7 +270,7 @@ input:enabled:focus-visible:where(
 #menu > details > summary {
     text-align: right;
     margin: 0;
-    padding: 15px;
+    padding: 1rem;
     width: 175px;
 }
 
@@ -279,11 +279,10 @@ input:enabled:focus-visible:where(
     text-align: right;
     position: absolute;
     right: 0;
-    top: 58px;
+    /* need this? top: 60px; */
     border-bottom: 1px solid var(--border);
     border-left: 1px solid var(--border);
     background-color: var(--accent-bg);
-    padding: 15px;
 }
 
 
@@ -305,7 +304,7 @@ header > details > nav ol li {
 
 header > details > nav a,
 header > details > nav a:visited {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
   display: inline-block;
   width: 100%;
   height: 100%;
