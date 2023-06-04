@@ -46,7 +46,7 @@ img.left-box {
     display: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 720px) {
     .mobile-banner {
         display: inline-block;
     }
@@ -54,6 +54,18 @@ img.left-box {
     .desktop-banner {
         display: none;
     }
+
+
+    #menu > details > nav {
+        bottom: 50px;
+        top: unset !important;
+    }
+
+    #menu {
+        bottom: 0;
+    }
+
+
 }
 
 /*
