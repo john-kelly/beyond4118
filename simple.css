@@ -268,7 +268,7 @@ input:enabled:focus-visible:where(
 
 #menu {
     display: flex;
-    padding: 6px;
+    padding: 15px;
     position: fixed;
     width: 100%;
     justify-content: flex-end;
