@@ -95,7 +95,7 @@ html {
   font-family: var(--mono-font);
 
   /* Uppercase by default */
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
 
   /* no scroll for now. */
   /*  scroll-behavior: smooth;*/
@@ -378,9 +378,11 @@ aside, details, pre, progress {
 aside {
   font-size: 1rem;
   width: 30%;
-  padding: 0 15px;
+/*  padding: 0 15px;*/
   margin-inline-start: 15px;
   float: right;
+  border: none;
+  box-shadow: 0 0 0 1px #0d0d0d, 6px 6px 0 0 #0d0d0d;;
 }
 *[dir="rtl"] aside {
   float: left;
@@ -389,15 +391,15 @@ aside {
 /* Make aside full-width on mobile */
 @media only screen and (max-width: 720px) {
   aside {
-    width: 100%;
-    float: none;
-    margin-inline-start: 0;
+    width: 50%;
+/*    float: none;*/
+/*    margin-inline-start: 0;*/
   }
 }
 
 article, fieldset, dialog {
 /*  border: 1px solid var(--border);*/
-  padding: 1rem;
+/*  padding: 1rem;*/
   border-radius: var(--standard-border-radius);
   margin-bottom: 1rem;
   padding-top: 0;
@@ -412,7 +414,7 @@ section h2:first-child {
 section {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding: 2rem 1rem;
+/*  padding: 2rem 1rem;*/
   margin: 3rem 0;
   margin-top: 0;
 }
