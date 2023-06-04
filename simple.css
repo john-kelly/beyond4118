@@ -305,12 +305,15 @@ header > details > nav ol li {
 
 header > details > nav a,
 header > details > nav a:visited {
-  margin: 0 0.5rem 1rem 0.5rem;
-  border-radius: var(--standard-border-radius);
-/*  color: var(--text);*/
+  padding: 1rem 0 1rem 0;
   display: inline-block;
-  padding: 0.1rem 1rem;
-/*  text-decoration: none;*/
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border: none;
+  text-decoration: underline;
+  line-height: 1;
+  font-size: 1rem;
 }
 
 header > details > nav a:hover,
@@ -322,14 +325,6 @@ header > details > nav a[aria-current="page"] {
 
 header > details > nav a.current {
 /*  arrow marker here.  */
-}
-
-header > details > nav a {
-  border: none;
-  padding: 0;
-  text-decoration: underline;
-  line-height: 1;
-  font-size: 1rem;
 }
 
 
