@@ -38,6 +38,11 @@
         <main style="height:100%; width:100%">
             <iframe style="overflow:hidden;height:100%;width:100%;border:0" src="/mapframe.html"></iframe>
         </main>
+        <script>
+            if(window.innerWidth >= 720) {
+                document.getElementById('menu').children[0].setAttribute('open', '');
+            }
+        </script>
     </body>
 
 </html>

@@ -304,9 +304,14 @@ input:enabled:focus-visible:where(
     text-align: right;
     margin: 0;
     font-size: 1rem;
-    box-shadow: 0 0 0 1px #0d0d0d, 4px 4px 0 0 #0d0d0d;
+    box-shadow: 0 0 0 1px #0d0d0d, 3px 3px 0 0 #0d0d0d;
     padding: 0.5rem 0.5rem;
-    background-color: var(--accent-bg)
+    background-color: var(--accent-bg);
+}
+
+#menu > details > summary:hover {
+    box-shadow: none;
+    border: 1px solid #0d0d0d;
 }
 
 #menu > details > nav {
@@ -382,7 +387,13 @@ aside {
   margin-inline-start: 15px;
   float: right;
   border: none;
-  box-shadow: 0 0 0 1px #0d0d0d, 6px 6px 0 0 #0d0d0d;;
+  box-shadow: 0 0 0 1px var(--accent), 4px 4px 0 0 #0d0d0d;
+  border-radius: 0;
+}
+
+aside:hover {
+    box-shadow: none;
+    border: 1px solid var(--accent);
 }
 
 aside > a {
