@@ -55,10 +55,17 @@ img.left-box {
         display: none;
     }
 
-
     #menu > details > nav {
         bottom: 50px;
         top: unset !important;
+    }
+
+    #menu > details[open] > summary::marker {
+        content: '- ' !important;
+    }
+
+    #menu > details > summary::marker {
+        content: '+ ' !important;
     }
 
     #menu {
