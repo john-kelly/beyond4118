@@ -12,6 +12,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
@@ -50,7 +51,7 @@
                 {
                     center: [34.0977313, -118.3456552],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
+                    zoom: 12,
                     zoomControl: false,
                     preferCanvas: false,
                     attributionControl: false,
@@ -64,10 +65,14 @@
 
 
 
+            L.mapbox.accessToken = 'pk.eyJ1IjoiamRya2VsbHkxNCIsImEiOiJybEcxRmhZIn0.QBfgRASEaiRh1-7P5mtL4Q';
+
+            var url = 'https://api.mapbox.com/styles/v1/jdrkelly14/cli6mfe6e009201rb37421jq5/tiles/256/{z}/{x}/{y}@2x?access_token=' + L.mapbox.accessToken;
+            // var url = 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'
 
 
             var tile_layer_c40fa3367858dfca2649a9f2d11b9b65 = L.tileLayer(
-                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                url,
                 {"attribution": "", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             ).addTo(map_0c7d91c272fb58b70c88739d6b89d858);
 
@@ -84,7 +89,7 @@
 
 
             var icon_7dea3c86470b8a423a756cdfe13c5ff0 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+                {"extraClasses": "fa-rotate-0", "icon": "comment", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
             marker_ee01ba6ae3b1cc092db94c00b2380f89.setIcon(icon_7dea3c86470b8a423a756cdfe13c5ff0);
 
@@ -111,7 +116,7 @@
 
 
             var icon_5e200b8e8cd401c7c3342d1fe4c23ff7 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+                {"extraClasses": "fa-rotate-0", "icon": "comment", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
             marker_5582b445fa90489ff1fe9753ac6a63b5.setIcon(icon_5e200b8e8cd401c7c3342d1fe4c23ff7);
 
@@ -138,7 +143,7 @@
 
 
             var icon_7396b46a2f4781535b990e4427685304 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+                {"extraClasses": "fa-rotate-0", "icon": "comment", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
             marker_b870ea8cf5faff4640c496177157fbce.setIcon(icon_7396b46a2f4781535b990e4427685304);
 
@@ -165,7 +170,7 @@
 
 
             var icon_bf0edc31916899256ee73afaf3226532 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+                {"extraClasses": "fa-rotate-0", "icon": "comment", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
             marker_240a9c77f47535a2f2af5bc76290cda8.setIcon(icon_bf0edc31916899256ee73afaf3226532);
 
@@ -192,7 +197,7 @@
 
 
             var icon_ff03941226f882353c8a852bf94acb09 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+                {"extraClasses": "fa-rotate-0", "icon": "comment", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
             marker_2d07a267a220dd61364addd404f1e41a.setIcon(icon_ff03941226f882353c8a852bf94acb09);
 
@@ -219,7 +224,7 @@
 
 
             var icon_67a2f5b4be1d516d835d6c956db99edc = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+                {"extraClasses": "fa-rotate-0", "icon": "comment", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
             marker_38bce539ee75058b70cee25bd018a9c0.setIcon(icon_67a2f5b4be1d516d835d6c956db99edc);
 
