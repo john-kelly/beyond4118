@@ -105,7 +105,7 @@ html {
 body {
   color: var(--text);
   background-color: var(--bg);
-  font-size: 1.15rem;
+  font-size: 1rem;
   line-height: 1.5;
   display: grid;
   grid-template-columns: 1fr min(45rem, 90%) 1fr;
@@ -210,10 +210,11 @@ h3 {
 a,
 a:visited {
   color: var(--accent);
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 button,
@@ -309,9 +310,17 @@ input:enabled:focus-visible:where(
     background-color: var(--accent-bg);
 }
 
-#menu > details > summary:hover {
+#menu > details[open] > summary {
     box-shadow: none;
     border: 1px solid #0d0d0d;
+}
+
+#menu > details[open] > summary::marker {
+    content: '- ';
+}
+
+#menu > details > summary::marker {
+    content: '+ ';
 }
 
 #menu > details > nav {
@@ -351,25 +360,28 @@ header > details > nav a:visited {
   height: 100%;
   vertical-align: middle;
   border: none;
-  text-decoration: underline;
+  text-decoration: none;
   line-height: 1;
   font-size: 1rem;
   color: var(--accent);
   white-space: nowrap;
 }
 
-header > details > nav a:hover,
-header > details > nav a.current,
-header > details > nav a[aria-current="page"] {
+header > details > nav a:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 header > details > nav a:hover::before,
 header > details > nav a.current::before,
 header > details > nav a[aria-current="page"]::before {
-    content: "→ ";
+    content: "→";
+    text-decoration: none;
+    color: #0d0d0d;;
+    display: inline-block;
+    padding-right: 7px;
+    float: left;
 }
-
 
 
 /* Consolidate box styling */
@@ -386,23 +398,25 @@ aside {
   width: 30%;
   margin-inline-start: 15px;
   float: right;
-  border: none;
-  box-shadow: 0 0 0 1px var(--accent), 4px 4px 0 0 #0d0d0d;
+/*  border: none;*/
+/*  box-shadow: 0 0 0 1px var(--accent), 4px 4px 0 0 #0d0d0d;*/
+/*    border: 1px solid var(--accent);*/
+/*    box-shadow: 0 0 0 1px var(--accent), 0 0 0 0 #0d0d0d;*/
   border-radius: 0;
+  border: 1px solid var(--accent);
 }
 
-aside:hover {
+aside a:hover {
     box-shadow: none;
     border: 1px solid var(--accent);
+    box-shadow: 0 0 0 1px var(--accent), 0 0 0 0 #0d0d0d;
+    border-radius: 0;
+/*    border: none;*/
 }
 
 aside > a {
     /* this removed an annoying whitespace at end */
     display: flex;
-}
-
-*[dir="rtl"] aside {
-  float: left;
 }
 
 /* Make aside full-width on mobile */
