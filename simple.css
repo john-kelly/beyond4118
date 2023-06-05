@@ -349,7 +349,7 @@ header > details > nav a:visited {
   text-decoration: underline;
   line-height: 1;
   font-size: 1rem;
-  color: #0d0d0d;
+  color: var(--accent);
   white-space: nowrap;
 }
 
@@ -377,8 +377,8 @@ aside, details, pre, progress {
 
 aside {
   font-size: 1rem;
+  display: flex;
   width: 30%;
-/*  padding: 0 15px;*/
   margin-inline-start: 15px;
   float: right;
   border: none;
