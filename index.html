@@ -19,8 +19,8 @@
         <link rel="stylesheet" href="/simple.css">
     </head>
 
-    <body>
-        <a id="site-logo" href="/"><img src="logo.png"></a>
+    <body style="display:block">
+        <a style="display: none; position:absolute" id="site-logo" href="/"><img src="logo.png"></a>
 
         <header id="menu">
             <details>
@@ -37,8 +37,19 @@
             </details>
         </header>
 
-        <img class="desktop-banner left-box" src="bannerbig.jpg">
-        <img class="mobile-banner left-box" src="left-box.jpeg">
-        <img class="mobile-banner left-box" src="right-box.jpeg">
+        <div id="page-wrapper" style="flex-direction: row; display:flex">
+            <div id="first-group" style="width:30%; display:flex; flex-direction:column; justify-content:space-evenly; padding:25px; padding-right:12.5px">
+                <img style="width:100%;" src="left.png">
+                <a id="map-link" href="/map.html" style="display:flex">
+                    <img style="border: 1px solid var(--accent); border-radius:0" src="map.png">
+                </a>
+                <div style="display:flex; text-align: justify">
+                    <p style="margin-top:0; margin-bottom: 0"><b>Beyond 41.18</b> is a community-based online counter-mapping platform on which users submit their personal experiences living and organizing in 41.18 zones. Through story-telling and archiving, we seek to start conversations and attention to patterns of lived experiences. <a href="/map.html">View map!</a></p>
+                </div>
+            </div>
+            <div id="second-group" style="width:70%; padding: 25px; padding-left:12.5px">
+                <img style="height:100%; border: 1px solid black;" src="right.png">
+            </div>
+        </div>
     </body>
 </html>
