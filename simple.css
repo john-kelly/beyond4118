@@ -75,7 +75,7 @@ img.left-box {
     }
 
     #menu > details > nav {
-        bottom: 50px;
+        bottom: 56px;
         top: unset !important;
     }
 
@@ -354,11 +354,9 @@ input:enabled:focus-visible:where(
 }
 
 #menu > details > summary {
-    text-align: right;
     margin: 0;
-    font-size: 1rem;
-    box-shadow: 0 0 0 1px #0d0d0d, 3px 3px 0 0 #0d0d0d;
-    padding: 0.5rem 0.5rem;
+    font-size: 1.1rem;
+    box-shadow: 0 0 0 1px #FF69B4, 3px 3px 0 0 #FF69B4;
     background-color: var(--accent-bg);
 }
 
@@ -379,7 +377,7 @@ input:enabled:focus-visible:where(
     text-align: right;
     position: absolute;
     right: 0;
-    top: 50px;
+    top: 56px;
     /* need this? positions proper without it. probably based on order in dom top: 60px; */
     /*  ok it's based on the height of the header menu.  */
     border: 1px solid #0d0d0d;
