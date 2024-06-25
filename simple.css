@@ -808,3 +808,12 @@ dialog::backdrop {
   padding: 1.5rem;
   margin: 2rem 0;
 }
+
+
+.image-link {
+    border: 1px solid var(--accent);
+}
+
+.image-link:hover {
+    border: 2px solid var(--accent);
+}

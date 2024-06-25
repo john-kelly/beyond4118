@@ -22,8 +22,8 @@
         <link rel="stylesheet" href="/simple.css">
     </head>
 
-    <body style="display:block;">
-        <a style="display: none; position:absolute" id="site-logo" href="/"><img src="logo.png"></a>
+    <body>
+        <a style="position:absolute" id="site-logo" href="/"><img src="logo.png"></a>
 
         <header id="menu">
             <details>
@@ -38,12 +38,20 @@
             </details>
         </header>
 
-        <header style="background-image: url(/babyangel23.gif); padding: 0; padding-bottom: 19px"><h1>street views</h1> <p>2nd edition coming soon...</p></header>
+        <main>
+           <header><h1>street views la</h1></header>
+            <section>
+                <article>
+                    <header><h2>* second edition</h2></header>
 
-        <div style="flex-direction: column; display:flex; justify-content:center;">
-            <div style="flex-direction: row; display:flex; justify-content:center">
-                <img style="border: 1px solid black; border-top: none" src="streetviews-homepage.png">
-            </div>
-        </div>
+                    <a href="street-views-second-edition.pdf">(click to view)<img class="image-link" src="street-views-second-edition-thumb.png"></a>
+                </article>
+            </section>
+        </main>
+        <script>
+            if(window.innerWidth >= 720) {
+                document.getElementById('menu').children[0].setAttribute('open', '');
+            }
+        </script>
     </body>
 </html>
